@@ -1,0 +1,156 @@
+*{
+  padding:0px;
+  margin: 0px;
+}
+
+#container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+#board{
+  width:400px;
+  height:400px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 133px 133px 133px;
+  margin-top: 40px;
+}
+
+.box{
+  height: 133px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35pt;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  user-select: none;
+  text-transform: uppercase;
+}
+
+#turn button{
+  background-color: chocolate;
+  color:white;
+  width:50px;
+  height:50px;
+  font-size: 22pt;
+}
+
+#turn span{
+  font-size:15pt;
+}
+
+#turn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#time{
+  font-size: 15pt;
+  margin-top: 10px;
+}
+
+#winner{
+  text-align: center;
+  font-size: 20pt;
+  color:blue;
+  font-family: sans-serif;
+  padding-top: 15px;
+}
+
+#replay{
+  background-color: chocolate;
+  color:white;
+  margin-top: 40px;
+  font-size: 15pt;
+  border-radius: 4px;
+  padding: 10px;
+  visibility: hidden;
+}
+
+#line1{
+  display: inline-block;
+  position: absolute;
+  width: 1px;
+  height: 370px;
+  margin-top: 20px;
+  margin-left:65px;
+  background-color: black;
+  visibility:hidden;
+}
+
+#line2{
+  display: inline-block;
+  position: absolute;
+  width: 370px;
+  height: 1px;
+  margin-left: 20px;
+  margin-top: 65px;
+  background-color: black;
+  visibility:hidden;
+}
+
+#line3{
+  display: inline-block;
+  position: absolute;
+  width: 420px;
+  height: 1px;
+  margin-left: 0px;
+  margin-top: 210px;
+  background-color: black;
+  visibility:hidden;
+  transform: rotate(45deg);
+}
+
+#line4{
+  display: inline-block;
+  position: absolute;
+  width: 370px;
+  height: 1px;
+  margin-left: 17px;
+  margin-top: 198px;
+  background-color: black;
+  visibility:hidden;
+}
+
+#line5{
+  display: inline-block;
+  position: absolute;
+  width: 370px;
+  height: 1px;
+  margin-left: 17px;
+  margin-top: 330px;
+  background-color: black;
+  visibility:hidden;
+}
+
+#line6{
+  display: inline-block;
+  position: absolute;
+  width: 1px;
+  height: 370px;
+  margin-left: 330px;
+  margin-top: 10px;
+  background-color: black;
+  visibility:hidden;
+}
+
+#line7{
+  display: inline-block;
+  position: absolute;
+  width: 1px;
+  height: 440px;
+  margin-left: 199px;
+  margin-top: -20px;
+  background-color: black;
+  visibility:hidden;
+  transform: rotate(45deg);
+}
